@@ -6,8 +6,234 @@
         <title>Connor Paladino</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/84f5445c46.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <h1 class="logoName">Connor Paladino</h1>
+                    <ul id="sideMenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-x" onclick="closeMenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+                </nav>
+                <div class="headerText">
+                    <p>Hi, my name is</p>
+                    <h1>Connor Paladino</h1>
+                    <p>and I'm am a Computer Engineering student <br> at the University of Pittsburgh</p>
+                </div>
+            </div>
+        </div>
+        <!---------about section--------------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="aboutCol1">
+                        <img src="assets/images/vecteezy_monkey-png-with-ai-generated_24704805_337.png">
+                    </div>
+                    <div class="aboutCol2">
+                        <h1 class="subTitle">Me - At a Glance</h1>
+                        <p>I began my college career as a varsity swimmer at the University of Pittsburgh.
+                            After realizing that my passions lied elsewhere during my freshman year, I decided to
+                            step away from the team to put all of my attention into my studies. Through many ups
+                            and downs I have finally found my passion again in software. Although I found myself slightly
+                            behind the curve in the competitve software industry, my passion and drive to succeed
+                            has allowed me to make exciting progess in the past year. I completed my first
+                            internship, competed in my first hackathon (and we won our track!), and involved myself in many different
+                            projects and clubs on campus. In my free time I enjoy working out, listening to music, and further developing my
+                            technical skills. I am excited to continue to grow as a professional!
+                        </p>
+
+                        <div class="tabTitles">
+                            <p class="tabLinks activeLink" onclick="openTab('projects')">Projects</p>
+                            <p class="tabLinks" onclick="openTab('workExperience')">Work Experience</p>
+                            <p class="tabLinks" onclick="openTab('education')">Education</p>
+                        </div>
+
+                        <div class="tabContents activeTab" id="projects">
+                            <ul>
+                                <li><span>Emberlite</span><br>Pitt Challenge 2023 project</li>
+                                <li><span>Micromouse</span><br>Pitt Robotics and Automation Society project</li>
+                                <li><span>Train Model</span><br>ECE 1140 - Systems Engineering semester project</li>
+                            </ul>
+                        </div>
+
+                        <div class="tabContents" id="workExperience">
+                            <ul>
+                                <li><span>September 2023 - Current</span><br>Shaler HS Varsity Swim Coach</li>
+                                <li><span>May 2023 - August 2023</span><br>Aires Application Support Developer - Intern</li>
+                                <li><span>May 2022 - August 2022</span><br>Summer camp counselor at Universal Athletic Club</li>
+                                <li><span>October 2016 - March 2020</span><br>US Soccer Referee (Grade 8)</li>
+                            </ul>
+                        </div>
+
+                        <div class="tabContents" id="education">
+                            <ul>
+                                <li><span>Current Academic Standing</span><br>Major - BSE Computer Engineering<br>GPA - 3.16/4.00<br>Expected Graduation - Spring 2025</li>
+                                <li><span>Key Classes</span><br>- Systems Engineering<br>- Algorithmic Thinking<br>- Computer Organization and Architecture<br>- Discrete Math<br>- Data Structures & Algorithms<br>- Microelectronics<br>- Embedded Systems</li>
+                                <li><span>Current Student Organizations</span><br>- Pitt Robotics and Automation Society<br>- Pitt Computer Science Club<br>- Club Roundnet at Pitt</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-------------------- projects ----------------->
+        <div id="projects">
+            <div class="container">
+                <h1 class="subTitle">Projects - Old and New</h1>
+                <div class="projectsList">
+                    <div>
+                        <h2>Emberlite</h2>
+                        <p>
+                            September 2023<br><br>
+                            Emberlite is a web app developed by my team during the Pitt Challenge 2023, a medical themed hackathon. Our
+                            web app aims to improve mental health in medical professions and combat burnout in medical workers.
+                            We utilize a Python backend tied to a MySQL server in order to recieve real time inputs from the app, and to store and visualize data.
+                            Our front end is composed of CSS/HTML, and our web app was locally hosted. The project was completed in a 42 hour timeframe, and we
+                            recieved first place for our track "Burnout in Healthcare Workers".
+                        </p>
+                        <a href="">See it in action with our Devpost here!</a>
+                    </div>
+                    <div>
+                        <h2>Micromouse</h2>
+                        <p>
+                            Feburary 2023 - Current<br><br>
+                            Micromouse is a national competition for STEM students to create an autonomous robot capable of traversing a maze. As a member of the navigation
+                            and movement teams at Pitt, my responsibilities include creating C++ based navigation algorithms for traversing and solving the maze, and creating
+                            PID control systems for our robot using inputs from infrared and sonar sensors. Our team plans to compete in the regional competition in Pittsburgh
+                            in Spring 2024.
+                        </p>
+                        <a href="http://micromouseusa.com/">Learn more about Micro-mouse here!</a>
+                    </div>
+                    <div>
+                        <h2>Train Model</h2>
+                        <p>
+                            August 2023 - Current<br><br>
+                            This project is based in fundemental software design. As a group of 7, my teammates and I are tasked with designing and implementing a realistic
+                            simulation software of our local train system, with our professor acting as the client. We are taught to employ agile design methods, such as weekly
+                            scrum meetings, vast documentation, customer collaboration, and weekly task delegation. This project is meant to prepare students to develop software
+                            as a team, and throughout the semester I will gain invaluable skills that will translate well into industry.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-------------------- work experience ----------------->
+
+        <div id="experience">
+            <div class="container">
+                <h1 class="subTitle">Work Experience</h1>
+                <h3>References for each role available by request.</h3>
+                <div class="workList">
+                    <div>
+                        <h2>Shaler High School Varsity Swim Coach</h2>
+                        <p>
+                            September 2023 - Current<br><br>
+                            - Nightly practices at Shaler High school, responsible for the athletic and emotional development of dozens of athletes.<br>
+                            - Responsible for writing, and running practices along with team of two other coaches.<br>
+                            - Frequent communication with booster club and school employees.<br>
+                            - 12-20 hour time commitment each week, running throughout the school year.
+                        </p>
+                    </div>
+                    <div>
+                        <h2>Aires Application Support Developer - Intern</h2>
+                        <p>
+                            May 2023 - August 2023<br><br>
+                            - Daily use of PL/SQL developer to access and manipulate the company's Oracle database.<br>
+                            - Front-end design using XML and Ajax (XML dynamics).<br>
+                            - Use of Microsoft Excel and Oracle JDev to generate mass data inserts/updates for the database.<br>
+                            - Daily work with a direct impact on the company's clients.<br>
+                            - Frequent collaboration internally with team.<br>
+                            - Worked on a team of interns to complete a semester-long intern project, culminating in a presentation to the executive team.
+                        </p>
+                        <a href="https://www.aires.com/">Check out the company here!</a>
+                        
+                    </div>
+                    <div>
+                        <h2>Summer camp counselor at Universal Athletic Club</h2>
+                        <p>
+                            May 2022 - August 2022<br><br>
+                            - Daily responsibilities included supervising 10-20 kids ages 5-12, and organizing and running games and other activities throughout the day.<br>
+                            - Developed soft skills in conflict resolution, patience, and personability. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-------------------- contact ----------------->
+
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contactLeft">
+                        <h1 class="subTitle">Let's Get in Touch</h1>
+                        <p><i class="fa-solid fa-envelope"></i> connorjpaladino@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i> (717)-874-7074</p>
+                        <div class="socialIcons">
+                            <a href="https://www.linkedin.com/in/connor-paladino-89421422b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/connorpaladino/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://github.com/connorpaladino1" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <a href="/assets/49319-16863197046560-1920.avif" class="btn">Download Resume</a>
+                    </div>
+                    <div class="contactRight">
+                        <form >
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="E-mail" placeholder="Your E-mail" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © Connor Paladino. Website hand crafted in beautiful Pittsburgh, PA</p>
+            </div>
+        </div>
+
+
+
+
+        <script>
+            
+            var tabLinks = document.getElementsByClassName("tabLinks")
+            var tabContents = document.getElementsByClassName("tabContents")
+
+            function openTab(tabName){
+                for(tabLink of tabLinks){
+                    tabLink.classList.remove("activeLink")
+                }
+                for(tabContent of tabContents){
+                    tabContent.classList.remove("activeTab")
+                }
+                event.currentTarget.classList.add("activeLink")
+                document.getElementById(tabName).classList.add("activeTab")
+            }
+
+        </script>
+
+        <script>
+
+            var sideMenu = document.getElementById("sideMenu")
+
+            function openMenu(){
+                sideMenu.style.right = "0"
+            }
+
+            function closeMenu(){
+                sideMenu.style.right = "-200px"
+            }
+
+        </script>
+
     </body>
 </html>
