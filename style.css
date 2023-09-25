@@ -22,9 +22,14 @@ body {
     background-position: center;
 }
 
+ /*Animations*/
+
 .container{
     padding: 10px 10%;
 }
+
+
+
 
 nav{
     display: flex;
@@ -429,4 +434,20 @@ nav .fa-solid{
     #projects{
         scroll-margin-top: -280px;
     }
+}
+
+
+ /*Animations*/
+.headerText, .subTitle, .projectsList, .workList, .aboutCol2, .ref{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(10%);
+    transition: all 1s;
+}
+
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
 }
